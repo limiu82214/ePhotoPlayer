@@ -11,14 +11,11 @@
 - If software crashes, it will automatically re-open.
 
 ## Demo
-<video width="640" controls>
-  <source src="./demo-resource/MV_01.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-<div style="display: flex; align-items: flex-start;">
-  <img src="./demo-resource/IMG_01.jpeg" style="width: 50%;height:auto;" alt="demo1">
-  <img src="./demo-resource/IMG_02.jpeg" style="width: 50%;height:auto;" alt="demo2">
-</div>
+
+https://github.com/user-attachments/assets/a752100e-4b2b-44c3-ab3c-b4d20d9d18aa
+
+![demo01](./demo-resource/IMG_01.jpeg)
+
 
 
 ## How to Use
