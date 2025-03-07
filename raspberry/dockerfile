@@ -1,0 +1,19 @@
+FROM fyneio/fyne-cross-images:linux
+RUN dpkg --add-architecture armhf && apt-get update && apt-get install -y libasound2-dev:armhf
+ENV PKG_CONFIG_PATH=/usr/lib/arm-linux-gnueabihf/pkgconfig
+
+
+## 下面是試錯的部分
+# RUN pkg-config --list-all && exit 1
+# RUN dpkg -L libasound2-dev:armhf | grep pkgconfig && exit 1
+# RUN echo "PKG_CONFIG_PATH is: $PKG_CONFIG_PATH" && exit 1
+
+# RUN apt-get update && apt-get install -y libasound2-dev
+# RUN pkg-config --modversion alsa
+# RUN pkg-config --variable pc_path pkg-config && exit 1
+
+# RUN cat $PKG_CONFIG_PATH/alsa.pc && exit 1
+# RUN ls -al $PKG_CONFIG_PATH && exit 1
+
+
+# RUN find / -name alsa.pc && exit 1

@@ -1,0 +1,12 @@
+[Unit]
+Description=Auto Restart Application Service
+After=graphical.target
+
+[Service]
+ExecStart=SCRIPT_PATH_PLACEHOLDER
+Restart=always
+User=USERNAME_PLACEHOLDER
+Environment=DISPLAY=:0
+
+[Install]
+WantedBy=default.target
